@@ -9,6 +9,13 @@
 import UIKit
 
 class ContactsViewController: UIViewController {
+    static let sceneIdentifier = "Contacts"
+    static let textAttributes = [ NSAttributedString.Key.foregroundColor : UIColor.white ]
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutNavigationBar()
@@ -19,11 +26,15 @@ class ContactsViewController: UIViewController {
     }
     
     func layoutNavigationBar() {
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.barTintColor = .red
-        self.navigationController?.navigationBar.tintColor = .white
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationItem.title = "Contacts"
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.barTintColor = Constants.Colors.grayDark
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.largeTitleTextAttributes = ContactsViewController.textAttributes
+        navigationController?.navigationBar.titleTextAttributes = ContactsViewController.textAttributes
+        navigationItem.title = ContactsViewController.sceneIdentifier
     }
 }
 
