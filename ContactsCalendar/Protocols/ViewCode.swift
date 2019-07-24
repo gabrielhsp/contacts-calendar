@@ -2,11 +2,11 @@
 //  ViewCode.swift
 //  ContactsCalendar
 //
-//  Created by Gabriel Pereira on 23/07/19.
-//  Copyright © 2019 Gabriel Pereira. All rights reserved.
+//  Created by Gabriel Henrique on 24/07/19.
+//  Copyright © 2019 Gabriel Henrique. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 protocol ViewCode: class {
     func setup()

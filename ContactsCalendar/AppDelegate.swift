@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ContactsCalendar
 //
-//  Created by Gabriel Pereira on 22/07/19.
-//  Copyright © 2019 Gabriel Pereira. All rights reserved.
+//  Created by Gabriel Henrique on 24/07/19.
+//  Copyright © 2019 Gabriel Henrique. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UINavigationController(rootViewController: ContactsViewController())
         window?.makeKeyAndVisible()
