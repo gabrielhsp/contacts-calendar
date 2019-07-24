@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B29B17422E8A76B003D158D /* ContactsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B29B17322E8A76B003D158D /* ContactsListCell.swift */; };
 		0B78338D22E89A1400F45721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78338C22E89A1400F45721 /* AppDelegate.swift */; };
 		0B78339422E89A1500F45721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B78339322E89A1500F45721 /* Assets.xcassets */; };
 		0B78339722E89A1500F45721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B78339522E89A1500F45721 /* LaunchScreen.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B29B17322E8A76B003D158D /* ContactsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListCell.swift; sourceTree = "<group>"; };
 		0B78338922E89A1400F45721 /* ContactsCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B78338C22E89A1400F45721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B78339322E89A1500F45721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0B7833A522E89B3700F45721 /* ContactsList.swift */,
+				0B29B17322E8A76B003D158D /* ContactsListCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7833AC22E89E5400F45721 /* Contact.swift in Sources */,
+				0B29B17422E8A76B003D158D /* ContactsListCell.swift in Sources */,
 				0B78338D22E89A1400F45721 /* AppDelegate.swift in Sources */,
 				0B7833A022E89A3B00F45721 /* ContactsViewController.swift in Sources */,
 				0B7833AA22E89D6D00F45721 /* UITableView.swift in Sources */,

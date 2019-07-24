@@ -19,6 +19,13 @@ class ContactsList: UIView {
         self.delegate = delegate
         super.init(frame: .zero)
         setup()
+        
+        
+        contactsTableView.delegate = self
+        contactsTableView.dataSource = self
+        contactsTableView.estimatedRowHeight = UITableView.automaticDimension
+        contactsTableView.rowHeight = 140
+        contactsTableView.register(ContactsListCell.self, forCellReuseIdentifier: ContactsListCell.identifier)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -29,7 +36,7 @@ class ContactsList: UIView {
         let tableView = UITableView()
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = .red
+        tableView.backgroundColor = .yellow
         
         return tableView
     }()
@@ -52,10 +59,22 @@ extension ContactsList: ViewCode {
             self.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: contactsTableView.bottomAnchor),
             self.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: contactsTableView.leadingAnchor),
             self.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: contactsTableView.trailingAnchor)
-            ])
+        ])
     }
     
     func setupExtraConfiguration() {
         contactsTableView.removeSpacing()
+    }
+}
+
+extension ContactsList: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ContactsListCell.identifier, for: indexPath)
+        
+        return cell
     }
 }
