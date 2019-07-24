@@ -12,7 +12,7 @@ protocol ContactsListDelegate: class {
     func userSelectedContact(_ contact: String)
 }
 
-class ContactsList: UIView, ViewCode {
+class ContactsList: UIView {
     weak var delegate: ContactsListDelegate?
     
     init(delegate: ContactsListDelegate) {
@@ -33,7 +33,9 @@ class ContactsList: UIView, ViewCode {
         
         return tableView
     }()
-    
+}
+
+extension ContactsList: ViewCode {
     func setup() {
         setupComponents()
         setupConstraints()
@@ -50,7 +52,7 @@ class ContactsList: UIView, ViewCode {
             self.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: contactsTableView.bottomAnchor),
             self.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: contactsTableView.leadingAnchor),
             self.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: contactsTableView.trailingAnchor)
-        ])
+            ])
     }
     
     func setupExtraConfiguration() {
