@@ -10,7 +10,7 @@ import UIKit
 
 extension UITableView {
     func removeSpacing() {
-        self.layoutMargins = .zero
-        self.separatorInset = .zero
+        layoutMargins = .zero
+        separatorInset = .zero
     }
 }

@@ -51,10 +51,10 @@ extension ContactsList: ViewCode {
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            self.safeAreaLayoutGuide.topAnchor.constraint(equalTo: contactsTableView.topAnchor),
-            self.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: contactsTableView.bottomAnchor),
-            self.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: contactsTableView.leadingAnchor),
-            self.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: contactsTableView.trailingAnchor)
+            safeAreaLayoutGuide.topAnchor.constraint(equalTo: contactsTableView.topAnchor),
+            safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: contactsTableView.bottomAnchor),
+            safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: contactsTableView.leadingAnchor),
+            safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: contactsTableView.trailingAnchor)
         ])
     }
     
