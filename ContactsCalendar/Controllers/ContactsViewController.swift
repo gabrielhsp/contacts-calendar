@@ -18,23 +18,12 @@ class ContactsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        layoutNavigationBar()
+        useNavigationBarDarken()
+        useLargeTitlesOnNavigationBar(with: ContactsViewController.sceneIdentifier)
     }
     
     override func loadView() {
         view = ContactsList(delegate: self)
-    }
-    
-    func layoutNavigationBar() {
-        navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.barTintColor = Constants.Colors.grayDark
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.largeTitleTextAttributes = ContactsViewController.textAttributes
-        navigationController?.navigationBar.titleTextAttributes = ContactsViewController.textAttributes
-        navigationItem.title = ContactsViewController.sceneIdentifier
     }
 }
 
