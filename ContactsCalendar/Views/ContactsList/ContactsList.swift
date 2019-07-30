@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ContactsListDelegate: class {
-    func userSelectedContact(_ contact: String)
+    func userSelectedContact()
 }
 
 class ContactsList: UIView {
@@ -83,5 +83,9 @@ extension ContactsList: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: ContactsListCell.identifier, for: indexPath)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.userSelectedContact()
     }
 }

@@ -28,7 +28,9 @@ class ContactsViewController: UIViewController {
 }
 
 extension ContactsViewController: ContactsListDelegate {
-    func userSelectedContact(_ contact: String) {
-        print("Test")
+    func userSelectedContact() {
+        let alert = UIAlertController(title: "This is a warning", message: "To all of you", preferredStyle: .alert)
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }
