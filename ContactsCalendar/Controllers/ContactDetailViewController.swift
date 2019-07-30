@@ -11,5 +11,7 @@ import UIKit
 class ContactDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .red
     }
 }

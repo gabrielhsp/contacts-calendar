@@ -87,7 +87,7 @@ extension ContactsListCell: ViewCode {
         ])
         
         NSLayoutConstraint.activate([
-            contactPhoneNumber.topAnchor.constraint(equalTo: contactName.bottomAnchor, constant: .zero),
+            contactPhoneNumber.topAnchor.constraint(equalTo: contactName.bottomAnchor, constant: 0),
             contactPhoneNumber.leadingAnchor.constraint(equalTo: contactName.leadingAnchor),
             contactPhoneNumber.trailingAnchor.constraint(equalTo: contactName.trailingAnchor),
             contactPhoneNumber.heightAnchor.constraint(equalToConstant: 20)
