@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B11F5EF2301F5B5004B2A37 /* ContactDetailPhoneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B11F5EE2301F5B5004B2A37 /* ContactDetailPhoneList.swift */; };
+		0B11F5F12301F9E4004B2A37 /* ContactDetailPhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B11F5F02301F9E4004B2A37 /* ContactDetailPhoneTableViewCell.swift */; };
 		0B273D0322E8ED74004B5155 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B273D0222E8ED74004B5155 /* Colors.swift */; };
 		0B29B17422E8A76B003D158D /* ContactsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B29B17322E8A76B003D158D /* ContactsListCell.swift */; };
 		0B5F26FC22EB6FB6003FCD75 /* UIViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F26FB22EB6FB6003FCD75 /* UIViewController+Layout.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B11F5EE2301F5B5004B2A37 /* ContactDetailPhoneList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailPhoneList.swift; sourceTree = "<group>"; };
+		0B11F5F02301F9E4004B2A37 /* ContactDetailPhoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailPhoneTableViewCell.swift; sourceTree = "<group>"; };
 		0B273D0222E8ED74004B5155 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0B29B17322E8A76B003D158D /* ContactsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListCell.swift; sourceTree = "<group>"; };
 		0B5F26FB22EB6FB6003FCD75 /* UIViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Layout.swift"; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				0BB1322622EA38A100406444 /* ContactDetail.swift */,
+				0B11F5EE2301F5B5004B2A37 /* ContactDetailPhoneList.swift */,
+				0B11F5F02301F9E4004B2A37 /* ContactDetailPhoneTableViewCell.swift */,
 			);
 			path = ContactDetail;
 			sourceTree = "<group>";
@@ -230,6 +236,8 @@
 				0BB1322522EA376700406444 /* ContactDetailViewController.swift in Sources */,
 				0B7833A022E89A3B00F45721 /* ContactsViewController.swift in Sources */,
 				0B7833AA22E89D6D00F45721 /* UITableView+Layout.swift in Sources */,
+				0B11F5F12301F9E4004B2A37 /* ContactDetailPhoneTableViewCell.swift in Sources */,
+				0B11F5EF2301F5B5004B2A37 /* ContactDetailPhoneList.swift in Sources */,
 				0B7833A622E89B3700F45721 /* ContactsList.swift in Sources */,
 				0B7833A822E89B7C00F45721 /* ViewCode.swift in Sources */,
 				0BB1322722EA38A100406444 /* ContactDetail.swift in Sources */,

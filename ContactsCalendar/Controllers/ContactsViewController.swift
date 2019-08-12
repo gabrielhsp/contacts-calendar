@@ -29,13 +29,6 @@ class ContactsViewController: UIViewController {
 
 extension ContactsViewController: ContactsListDelegate {
     func userSelectedContact() {
-        let alert = UIAlertController(title: "This is a warning", message: "To all of you", preferredStyle: .alert)
-        let button = UIAlertAction(title: "Close", style: .cancel) { (_) in
-            self.navigationController?.pushViewController(ContactDetailViewController(), animated: true)
-        }
-
-        alert.addAction(button)
-
-        self.present(alert, animated: true, completion: nil)
+        self.navigationController?.pushViewController(ContactDetailViewController(), animated: true)
     }
 }

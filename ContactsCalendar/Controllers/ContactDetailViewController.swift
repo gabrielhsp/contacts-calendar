@@ -9,9 +9,16 @@
 import UIKit
 
 class ContactDetailViewController: UIViewController {
+    override func loadView() {
+        view = ContactDetail(delegate: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .red
+    }
+}
+
+extension ContactDetailViewController: ContactDetailDelegate {
+    func userHasBeenLoaded() {
     }
 }
